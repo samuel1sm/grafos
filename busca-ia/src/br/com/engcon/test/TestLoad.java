@@ -27,11 +27,14 @@ public class TestLoad {
 		//Q6
 		System.out.print("6. Distribuição de graus (grau/quantidade): ");
 		graph.graphDistribution();
-		//System.out.println(graph.getHub().getId());
 
+		//Q7
+		System.out.print("7. Distribuição dos pesos das aretas (peso/quantidade): ");
+		graph.edgeWeightDistribution(); 
 
 		//5. Quantidade de cliques >= 4 vértices
 		//7. Distribuição dos pesos nas arestas
+
 	}
 
 }

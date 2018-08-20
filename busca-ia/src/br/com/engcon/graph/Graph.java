@@ -130,4 +130,19 @@ public class Graph {
 		System.out.println();
 	}
 
+	public void edgeWeightDistribution(){
+		List<Float> weights = new ArrayList<>();
+		float biggestValue = 0;
+
+		for (Edge e : this.getEdges()){
+			weights.add(e.getWeight());
+			if (e.getWeight() > biggestValue) biggestValue = e.getWeight();
+		}
+
+		for (float i = 0; i <= biggestValue; i++){
+			if (Collections.frequency(weights, i) > 0) System.out.print("(" + i + "/" + Collections.frequency(weights, i) + ")");
+		}
+		System.out.println();
+	}
+
 }
