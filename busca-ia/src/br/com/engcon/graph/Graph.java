@@ -114,4 +114,20 @@ public class Graph {
         return nodeList.size();
     }
 
+    public void graphDistribution(){
+
+		List<Integer> degrees = new ArrayList<>();
+		int biggestValue = 0;
+
+		for (Node n : this.getNodeList()){
+			degrees.add(n.getDegree());
+			if (n.getDegree() > biggestValue) biggestValue = n.getDegree();
+		}
+
+		for (int i = 0; i <= biggestValue; i++){
+			if (Collections.frequency(degrees, i) > 0) System.out.print("(" + i + "/" + Collections.frequency(degrees, i) + ")");
+		}
+		System.out.println();
+	}
+
 }

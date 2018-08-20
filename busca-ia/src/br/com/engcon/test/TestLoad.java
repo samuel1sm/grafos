@@ -20,24 +20,14 @@ public class TestLoad {
 
 		//Q1-Q4
         System.out.println("1. A quantidade de nós (ordem) é " + graph.size());
-		System.out.println("2. A quantidade de arestas (tamanho) é " + (float)graph.getEdges().size());
+		System.out.println("2. A quantidade de arestas (tamanho) é " + graph.getEdges().size());
         System.out.println("3. A densidade é "+ ((float)graph.getEdges().size())/graph.size());
 		System.out.println("4. O grau médio é "+ graph.averageDegree());
 
 		//Q6
-		List<Integer> degrees = new ArrayList<>();
-		int biggestValue = 0;
-
-		for (Node n : graph.getNodeList()){
-			degrees.add(n.getDegree());
-			if (n.getDegree() > biggestValue) biggestValue = n.getDegree();
-		}
-
 		System.out.print("6. Distribuição de graus (grau/quantidade): ");
-		for (int i = 0; i <= biggestValue; i++){
-			if (Collections.frequency(degrees, i) > 0) System.out.print("(" + i + "/" + Collections.frequency(degrees, i) + ")");
-		}
-		System.out.println();
+		graph.graphDistribution();
+		//System.out.println(graph.getHub().getId());
 
 
 		//5. Quantidade de cliques >= 4 vértices
