@@ -1,0 +1,13 @@
+0;sibiu
+1;rimmicu vilcea
+2;pitest
+3;arad
+4;craiova
+5;dobreta
+6;zerind
+7;mehadia
+8;lugoj
+9;bucharest
+10;fagaras
+11;timisoara
+12;oradea

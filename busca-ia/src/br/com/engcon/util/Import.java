@@ -55,7 +55,7 @@ public class Import {
 					for (int i = 3; i < edgeTxt.length; i+=2) {
 						e.getOtherAttributes().put(edgeTxt[i], edgeTxt[i+1]);
 					}
-					
+
 				}
 			}
 		}	

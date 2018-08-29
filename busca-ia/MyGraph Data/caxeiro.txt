@@ -1,0 +1,20 @@
+0;rimmicu vilcea
+1;giurgiu
+2;dobreta
+3;hirsova
+4;zerind
+5;eforie
+6;mehadia
+7;neamt
+8;vaslui
+9;lugoj
+10;bucharest
+11;fagaras
+12;pitest
+13;arad
+14;timisoara
+15;craiova
+16;oradea
+17;urziceni
+18;sibiu
+19;iasi
