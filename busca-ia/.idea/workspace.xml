@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d788bc6f-6f7f-44cd-b9b3-be8ce8589140" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/br/com/engcon/graph/NodeAux.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/br/com/engcon/graph/Graph.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/br/com/engcon/graph/Graph.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/br/com/engcon/test/TestLoad.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/br/com/engcon/test/TestLoad.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/com/engcon/graph/Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/engcon/graph/Graph.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/br/com/engcon/test/TestLoad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/engcon/test/TestLoad.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/com/engcon/util/Import.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/engcon/util/Import.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/bin/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -47,12 +41,12 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="47" />
-          <entry key="java" value="6835" />
+          <entry key="java" value="7256" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="6835" />
+          <entry key="JAVA" value="7256" />
           <entry key="PLAIN_TEXT" value="47" />
         </counts>
       </usages-collector>
@@ -63,8 +57,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/br/com/engcon/test/TestLoad.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="58" column="8" selection-start-line="58" selection-start-column="8" selection-end-line="66" selection-end-column="9" />
+            <state relative-caret-position="11">
+              <caret line="33" column="57" selection-start-line="33" selection-start-column="57" selection-end-line="33" selection-end-column="57" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -261,7 +255,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1535587002593" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1535589003047" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -521,8 +515,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/br/com/engcon/test/TestLoad.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="58" column="8" selection-start-line="58" selection-start-column="8" selection-end-line="66" selection-end-column="9" />
+        <state relative-caret-position="11">
+          <caret line="33" column="57" selection-start-line="33" selection-start-column="57" selection-end-line="33" selection-end-column="57" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

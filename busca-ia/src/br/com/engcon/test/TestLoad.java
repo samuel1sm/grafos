@@ -1,5 +1,6 @@
 package br.com.engcon.test;
 
+import java.lang.reflect.Array;
 import java.util.*;
 
 import br.com.engcon.graph.Graph;
@@ -13,7 +14,7 @@ public class TestLoad {
 	
 	public static void main(String[] args) throws Exception {
 
-		String dataSet = "caxeiro";
+		String dataSet = "bus-network";
 		Graph graph = Import.loadGraph(dataSet);
 		
 		List<Node> nodes = graph.getNodeList();
@@ -52,19 +53,63 @@ public class TestLoad {
 				graphAux.addEdge(indexMap.get(list.get(i).getId()),indexMap.get(list.get(i).getList().get(j)),1);
 			}
 		}
-		graphAux.showGraph();
-				List<ArrayList<Integer>> cliques;
-				ArrayList<Integer> indices = new ArrayList<>();
-			for (int i = 0; i < list.size(); i++) {
-				for (int j = 0; j < list.size(); j++) {
-					if (graphAux.getGraph()[i][j] == 1){
-						indices.add(j);
+		//graphAux.showGraph();
+
+//		int graph2[][] = graphAux.getGraph();
+//
+//		ArrayList<ArrayList<Integer>> cliqueList = new ArrayList<>();
+//
+//		for (int i = 0; i < list.size(); i++) {
+//			ArrayList<Integer> array = new ArrayList<>();
+//			array.add(i);
+//			for (int j = 0; j < list.size(); j++) {
+//				if(graph2[i][j]!=0){
+//					array.add(j);
+//				}
+//			}
+//			cliqueList.add(array);
+//		}
+
+
+		List<ArrayList<Integer>> cliques = new ArrayList<>();
+		ArrayList<Integer> indices = new ArrayList<>();
+		ArrayList<Integer> indicesCliques = new ArrayList<>();
+
+		for (int i = 0; i < list.size(); i++) {
+			for (int j = 0; j < list.size(); j++) {
+				if (graphAux.getGraph()[i][j] == 1){
+					indices.add(j);
+				}
+			}
+			for (int j = 0; j < list.size(); j++) {
+				boolean validacao = true;
+				for (int k = 0; k < indices.size(); k++) {
+					if (graphAux.getGraph()[indices.get(k)][j] != 1){
+						validacao = false;
 					}
 				}
-				//cliques.add(indices);
-				indices.clear();
+				if (validacao){
+					indicesCliques.add(j);
+				}
 
 			}
+			cliques.add(indicesCliques);
+			indicesCliques.clear();
+			System.out.println(cliques.size());
+			//cliques.add(indices);
+			indices.clear();
+		}
+
+		for (int i = 0; i < cliques.size(); i++) {
+
+			for (int b = 0; b < cliques.get(i).size(); b++) {
+				System.out.printf( b + " : ");
+			}
+			System.out.println();
+		}
+
+
+
 
 //		String dataset = "nossoBusao";
 // 		NodeIndexDao.createTxt(dataset);
